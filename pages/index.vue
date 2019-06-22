@@ -13,8 +13,11 @@ export default {};
 
 <style>
 .container {
+  position: absolute;
+  left: 0;
+  top: 0;
   margin: 0 auto;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: row;
 }
@@ -38,6 +41,7 @@ export default {};
     rgba(255, 130, 126, 1) 0%,
     rgba(255, 90, 95, 1) 30%
   );
+  z-index: -10;
 }
 .right-container {
   position: absolute;
@@ -48,7 +52,7 @@ export default {};
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
+  z-index: -1;
   padding-right: 1rem;
 }
 
